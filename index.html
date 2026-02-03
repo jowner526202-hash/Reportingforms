@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>درع الأمان | مكافحة الابتزاز - المطور أحمد</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-bg: #0f172a;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --accent: #38bdf8;
+            --danger: #ef4444;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--main-bg);
+            background-image: radial-gradient(circle at top right, #1e293b, #0f172a);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        /* الهيدر */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-weight: 900;
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            opacity: 0.8;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* شبكة المواقع */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        /* تصميم البطاقة */
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(56, 189, 248, 0.2);
+        }
+
+        .card-header {
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .card-body {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cliche-box {
+            background: #f8fafc;
+            border-right: 5px solid var(--accent);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #475569;
+        }
+
+        .cliche-box b {
+            display: block;
+            color: var(--danger);
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            padding: 14px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: 0.3s;
+            margin-top: auto;
+        }
+
+        /* هوية المنصات */
+        .fb { background: #1877F2; }
+        .ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .sc { background: #FFFC00; color: #000; }
+        .tt { background: #000000; }
+        .go { background: #4285F4; }
+        .tw { background: #1DA1F2; }
+
+        /* تذييل الصفحة */
+        footer {
+            margin-top: 60px;
+            padding: 40px;
+            background: rgba(0,0,0,0.3);
+            color: white;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .dev-badge {
+            background: var(--accent);
+            color: var(--main-bg);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .rights {
+            font-size: 0.85rem;
+            opacity: 0.6;
+            margin-top: 10px;
+        }
+
+        /* أنيميشن بسيط */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card { animation: fadeIn 0.6s ease forwards; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>🛡️ بوّابة الحماية الرقمية</h1>
+        <p>المرجع الأول لتقديم البلاغات الرسمية وإغلاق محتوى الابتزاز</p>
+    </div>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <div class="card-header ig">إنستجرام | Instagram</div>
+            <div class="card-body">
+                <div class="cliche-box">
+                    <b>⚠️ الكليشة الأمنية:</b>
+                    هذا النموذج مخصص لحالات "الابتزاز الجنسي" أو نشر الصور بدون موافقة. عند الإرسال، تقوم إدارة إنستجرام بمراجعة بصمة الصورة ومنع تداولها وحظر حساب المبتز فوراً.
+                </div>
+                <a href="https://help.instagram.com/contact/584460464982589" target="_blank" class="btn ig">إرسال بلاغ إغلاق</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header sc">سناب شات | Snapchat</div>
+            <div class="card-body">
+                <div class="cliche-box">
+                    <b>⚠️ الكليشة الأمنية:</b>
+                    سناب شات يعتبر الابتزاز انتهاكاً صارماً لخصوصية المجتمع. سيتم فحص المحادثات المبلغ عنها وتعطيل جهاز المبتز من الوصول للمنصة نهائياً.
+                </div>
+                <a href="https://support.snapchat.com/ar-AA/i-need-help" target="_blank" class="btn sc">تقديم بلاغ فوري</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header fb">فيسبوك | Facebook</div>
+            <div class="card-body">
+                <div class="cliche-box">
+                    <b>⚠️ الكليشة الأمنية:</b>
+                    استخدم خيار "نشر صور حميمية" لضمان استجابة الفريق التقني خلال أقل من 24 ساعة. يتم تتبع عنوان IP المبتز وتزويد الجهات الأمنية به عند الطلب.
+                </div>
+                <a href="https://www.facebook.com/help/contact/567360146613359" target="_blank" class="btn fb">بلاغ انتهاك الخصوصية</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header go">جوجل | Google Search</div>
+            <div class="card-body">
+                <div class="cliche-box">
+                    <b>⚠️ الكليشة الأمنية:</b>
+                    إجراء إزالة المحتوى من محرك البحث يضمن عدم ظهور اسمك أو صورك في النتائج العامة، مما يقتل محاولات المبتز في التشهير بك علنياً.
+                </div>
+                <a href="https://support.google.com/websearch/answer/6302812" target="_blank" class="btn go">إزالة النتائج من جوجل</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header tt">تيك توك | TikTok</div>
+            <div class="card-body">
+                <div class="cliche-box">
+                    <b>⚠️ الكليشة الأمنية:</b>
+                    إرسال البلاغ هنا يؤدي إلى مراجعة الذكاء الاصطناعي للمحتوى، وفي حال ثبوت الابتزاز، يُحذف الفيديو فوراً ويتم حظر حساب الناشر حظراً نهائياً.
+                </div>
+                <a href="https://www.tiktok.com/legal/report/privacy" target="_blank" class="btn tt">إبلاغ عن محتوى مسيء</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header tw">منصة X | تويتر</div>
+            <div class="card-body">
+                <div class="cliche-box">
+                    <b>⚠️ الكليشة الأمنية:</b>
+                    سياسة X تمنع منعاً باتاً نشر المعلومات الخاصة (Doxxing). البلاغ عبر هذا الرابط يحمي بياناتك وموقعك وصورك من التداول.
+                </div>
+                <a href="https://help.twitter.com/en/safety-and-security/report-private-information" target="_blank" class="btn tw">بلاغ حماية المعلومات</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="dev-badge">برمجة وتطوير: أحمد</div>
+    <p>هذا المشروع صُمم لمساعدة ضحايا الابتزاز وتسهيل وصولهم للقنوات الرسمية.</p>
+    <div class="rights">جميع الحقوق محفوظة للمطور أحمد © 2026</div>
+</footer>
+
+</body>
+</html>
